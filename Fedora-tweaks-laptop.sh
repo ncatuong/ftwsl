@@ -42,9 +42,8 @@ done
 echo 'This script enables special tweaks to make fedora more usable. These tweaks include: DNF speed up, installs RPM Fusion  (free and non-free), installs gnome-tweaks, fedy, TLP, steam, vlc, support for various multimedia codecs and compression support, snap, better_fonts'
 
 # These following lines speed up dnf
-echo 'fastestmirror=true' >> /etc/dnf/dnf.conf
-echo 'max_parallel_downloads=10' >> /etc/dnf/dnf.conf
-echo 'deltarpm=true' >> /etc/dnf/dnf.conf
+sudo echo 'fastestmirror=true' >> /etc/dnf/dnf.conf
+sudo echo 'max_parallel_downloads=10' >> /etc/dnf/dnf.conf
 
 # Update system and install RPM Fusion Free and Non-free repos
 sudo dnf update -y

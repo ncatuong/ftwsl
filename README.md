@@ -1,4 +1,4 @@
-# FEDORA TWEAKS 
+# ftwsl - fedora tweaks for wsl2
 > [!NOTE]
 > This script enables special tweaks to make Fedora linux more usable out of the box, **_run at your own risk!_**
 > This script is fully autonomous, once run via CLI it will install programs and configure Fedora with the tweaks listed below.
@@ -6,7 +6,7 @@
 ## About
 This script includes two versions, desktop and laptop. Pick accordingly, laptop includes additional tweaking to the gnome-subsystem that allows for more efficient use of the trackpad. Desktop does not include these tweaks, making for a slightly faster set up process.
 
-## Desktop Version:
+## Normal:
 
 |Tweaks included | Description |
 | ------------- | ------------- |
@@ -27,13 +27,11 @@ This script includes two versions, desktop and laptop. Pick accordingly, laptop 
 | SSD Trimmer | Enables Systemd call for fstrim.timer |
 
 
-## Unique to Laptop Version: 
+## Extra: 
 
 |Tweaks included | Description |
 | ------------- | ------------- |
-| Trackpad Tweaks  | Configures trackpoint for scrolling when combined with physical middle button, and enables tap-to-click on gnome-display-manager |
-| TLP | Battery optomization software than runs in the background | 
-
+| WIP  | WIP |
 
 **And more to come in the future!**
 
@@ -45,23 +43,7 @@ ___
 ### Desktop Version
 
 ```
-git clone https://github.com/rockenman1234/fedora-tweaks.git
-
-cd ~/fedora-tweaks/
-
-chmod +x Fedora-tweaks-desktop.sh
-
-sudo ./Fedora-tweaks-desktop.sh
-```
-
-### Laptop Version
-
-```
-git clone https://github.com/rockenman1234/fedora-tweaks.git
-
-cd ~/fedora-tweaks/
-
-chmod +x Fedora-tweaks-laptop.sh
-
-sudo ./Fedora-tweaks-laptop.sh
+git clone https://github.com/ncatuong/ftwsl.git ftwsl # Clone repository
+cd ~/ftwsl/ # Change directory to the repository folder
+sudo bash ftwsl-normal.sh # Run file with superuser permission
 ```

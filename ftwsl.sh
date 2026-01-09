@@ -30,7 +30,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
     warn "macOS not supported!"
 fi
 
-if [ ! -f /proc/sys/fs/binfmt_misc/WSLInterop ]; then
+if [ ! -f /proc/sys/fs/binfmt_misc/WSLInterop* ]; then
     err "WSL enviroment not found! Please use standard Fedora Tweaks!"
     exit 1
 fi

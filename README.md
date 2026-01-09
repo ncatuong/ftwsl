@@ -23,7 +23,7 @@ ___
 ### Desktop Version
 
 ```
-git clone https://github.com/ncatuong/ftwsl.git ftwsl # Clone repository
-cd ~/ftwsl/ # Change directory to the repository folder
-sudo bash ftwsl.sh # Run file with superuser permission
+git clone https://github.com/ncatuong/ftwsl.git ftwsl     # Clone repository
+cd ~/ftwsl/     # Change directory to the repository folder
+sudo bash ftwsl.sh     # Run file with superuser permission
 ```

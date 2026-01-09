@@ -82,20 +82,13 @@ function install_repos() {
     https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
     https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     
-    dnf groupupdate core -y
-    
-    dnf install dnf-plugins-core -y
-    dnf copr enable dawid/better_fonts -y
 }
 
 echo ""
 echo "starting configuration wizard..."
 
 ask_and_run "edit dnf configuration" tweak_dnf
-
-ask_and_run "install RPM Fusion & Better Fonts repositories" install_repos
-
-ask_and_run "apply system tweaks" system_tweaks
+ask_and_run "install RPM Fusion repository" install_repos
 
 echo '
 The tweaks are done! Thanks for using my project! 

@@ -4,7 +4,7 @@
 > This script is fully autonomous, once run via CLI it will install programs and configure Fedora with the tweaks listed below.
 
 ## About
-This script includes two versions, desktop and laptop. Pick accordingly, laptop includes additional tweaking to the gnome-subsystem that allows for more efficient use of the trackpad. Desktop does not include these tweaks, making for a slightly faster set up process.
+no abt this idk
 
 ## Features:
 
